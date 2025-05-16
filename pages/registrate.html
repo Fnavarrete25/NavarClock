@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> Regístrate- Disfruta de tus ventajas</title>
+
+  <!--link a Bootstrap via CDN-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.4/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-DQvkBjpPgn7RC31MCQoOeC9TI2kdqa4+BSgNMNj8v77fdC77Kj5zpWFTJaaAoMbC" crossorigin="anonymous">
+
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+
+
+
+  <!-- Link CSS -->
+  <link rel="stylesheet" href="../style/css/style.css">
+</head>
+
+<body>
+
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top nav-scroll">
+      <div class="container">
+        <a class="navbar-brand fw-bold" href="../index.html">NavarClock</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link active" href="../index.html">Inicio</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="./colecciones.html">Colecciones</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./sobre-nosotros.html">Sobre nosotros</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./registrate.html">Regístrate</a>
+            </li>
+          </ul>
+          <a href="./contacto.html" class="btn btn-light ms-3">Contacto</a>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Main -->
+  <main>
+
+    <div class="container-fluid p-0">
+      <div class="position-relative text-center">
+        <!-- Imagen de fondo -->
+        <img src="/img/registrate.webp" class="img-fluid w-100 "
+          style="filter: brightness(0.3);" alt="Imagen de fondo">
+
+        <!-- Texto y botón centrados -->
+
+        <div class="position-absolute top-50 start-50 translate-middle w-100">
+          <h1 class="display-4 display-md-2 mt-4 text-white text-center fw-bold">
+            SER MEMBER <br> SON TODO VENTAJAS
+          </h1>
+          
+          <h5 class="text-white mb-3">Haz compras, personaliza tu reloj y celebra tus logros con lo mejor de NavarClock.
+          </h5>
+             
+        </div>
+      </div>
+    </div>
+
+
+
+    <div class="container my-5">
+      <h2 class="mb-4 text-center">Más ventajas como Member</h2>
+      <div class="row g-4 justify-content-center">
+        <!-- Envíos gratuitos -->
+        <div class="col-12 col-md-4 text-center">
+          <div class="mb-3">
+            <i class="bi bi-truck" style="font-size: 2.5rem; color: #ff6600;"></i>
+          </div>
+          <h5>Envíos gratuitos</h5>
+          <p class="text-muted mb-0">Así es: los envíos son gratuitos para Members.</p>
+        </div>
+        <!-- Devoluciones sin ticket -->
+        <div class="col-12 col-md-4 text-center">
+          <div class="mb-3">
+            <i class="bi bi-receipt-cutoff" style="font-size: 2.5rem; color: #ff6600;"></i>
+          </div>
+          <h5>Devoluciones sin ticket</h5>
+          <p class="text-muted mb-0">Para hacer devoluciones o cambios de productos sin ticket.</p>
+        </div>
+        <!-- Experiencias para Members -->
+        <div class="col-12 col-md-4 text-center">
+          <div class="mb-3">
+            <i class="bi bi-calendar-event" style="font-size: 2.5rem; color: #ff6600;"></i>
+          </div>
+          <h5>Experiencias para Members</h5>
+          <p class="text-muted mb-0">Únete a la comunidad para disfrutar de eventos en directo para Members.</p>
+        </div>
+      </div>
+    </div>
+
+
+
+    <section class="container py-5">
+      <div class="row justify-content-center">
+        <div class="col-md-6 col-sm-12">
+          <h2 class="text-center mb-4">Crear Cuenta</h2>
+          <form onsubmit="return validarFormulario()">
+            <div class="mb-3">
+              <label for="titulo" class="form-label">Título</label>
+              <select class="form-select" id="titulo">
+                <option>Sr.</option>
+                <option>Sra.</option>
+                <option>Otro</option>
+              </select>
+            </div>
+
+            <div class="mb-3">
+              <label for="nombre" class="form-label">Nombre *</label>
+              <input type="text" class="form-control" id="nombre" required>
+            </div>
+
+            <div class="mb-3">
+              <label for="apellido" class="form-label">Apellido *</label>
+              <input type="text" class="form-control" id="apellido" required>
+            </div>
+
+            <div class="mb-3">
+              <label for="email" class="form-label">Correo Electrónico *</label>
+              <input type="email" class="form-control" id="email" required>
+            </div>
+
+            <div class="mb-3 position-relative">
+              <label for="password" class="form-label">Contraseña *</label>
+              <input type="password" class="form-control" id="password" required>
+              <i class="bi bi-eye toggle-password" onclick="togglePassword('password', this)"></i>
+            </div>
+
+            <div class="mb-3 position-relative">
+              <label for="confirmPassword" class="form-label">Repetir Contraseña *</label>
+              <input type="password" class="form-control" id="confirmPassword" required>
+              <i class="bi bi-eye toggle-password" onclick="togglePassword('confirmPassword', this)"></i>
+            </div>
+
+            <div class="form-check mb-2">
+              <input class="form-check-input" type="checkbox" id="privacy" required>
+              <label class="form-check-label" for="privacy">
+                He leído y comprendido la <a href="#">política de privacidad</a> *
+              </label>
+            </div>
+
+            <div class="form-check mb-4">
+              <input class="form-check-input" type="checkbox" id="newsletter">
+              <label class="form-check-label" for="newsletter">
+                Acepto que NavarClock me envíe sus promociones y acceda a mis datos personales. Confirmo haber leído la
+                <a href="#">política de privacidad</a>.
+              </label>
+            </div>
+
+            <div id="errorMsg" class="text-danger mb-3"></div>
+
+            <button type="submit" class="btn btn-dark w-100">Crear una cuenta</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+
+
+  </main>
+
+
+
+  <!-- Footer -->
+  <footer class="bg-dark text-light pt-5 pb-3">
+
+    <div class="container">
+      <div class="row">
+
+        <div class="col-md-3 mb-4">
+          <h5 class="text-uppercase">Productos</h5>
+          <ul class="list-unstyled">
+            <li><a href="#" class="text-decoration-none text-light">Relojes</a></li>
+            <li><a href="#" class="text-decoration-none text-light">Colecciones</a></li>
+            <li><a href="#" class="text-decoration-none text-light">Correas de cuero</a></li>
+            <li><a href="#" class="text-decoration-none text-light">Correas de acero</a></li>
+
+
+
+          </ul>
+        </div>
+
+        <div class="col-md-3 mb-4">
+          <h5 class="text-uppercase">Atención al cliente</h5>
+          <ul class="list-unstyled">
+            <li><a href="/pages/contacto.html" class="text-decoration-none text-light">Soporte</a></li>
+            <li><a href="#" class="text-decoration-none text-light">Preguntas frecuentes</a></li>
+            <li><a href="#" class="text-decoration-none text-light">Condiciones de entrega</a></li>
+            <li><a href="#" class="text-decoration-none text-light">Eliminación de dispositivos</a></li>
+            <li><a href="#" class="text-decoration-none text-light">Devoluciones</a></li>
+
+
+          </ul>
+        </div>
+
+        <div class="col-md-3 mb-4">
+          <h5 class="text-uppercase">Suscripción</h5>
+          <ul class="list-unstyled">
+            <li><a href="#" class="text-decoration-none text-light">NavarClock ID</a></li>
+            <li><a href="#" class="text-decoration-none text-light">Boletín</a></li>
+          </ul>
+        </div>
+
+        <div class="col-md-3 mb-4">
+          <h5 class="text-uppercase">Corporativo</h5>
+          <ul class="list-unstyled">
+            <li><a href="/pages/sobre-nosotros.html" class="text-decoration-none text-light">La Empresa</a></li>
+            <li><a href="#" class="text-decoration-none text-light">Noticias de productos</a></li>
+          </ul>
+        </div>
+
+      </div>
+
+      <hr class="bg-secondary">
+
+      <div class="row align-items-center">
+        <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+          <small>© 2025 NavarClock |
+            <a href="#" class="text-light text-decoration-underline">Condiciones de uso</a> |
+            <a href="#" class="text-light text-decoration-underline">Política de privacidad</a>
+          </small>
+        </div>
+        <div class="col-md-6 text-center text-md-end">
+
+          <!-- Métodos de pago -->
+          <img src="https://upload.wikimedia.org/wikipedia/commons/4/41/Visa_Logo.png" alt="Visa" width="40"
+            class="mx-1">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/0/04/Mastercard-logo.png" alt="Mastercard" width="40"
+            class="mx-1">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/b/b5/PayPal.svg" alt="PayPal" width="40"
+            class="mx-1">
+
+        </div>
+      </div>
+
+      <!-- Íconos sociales -->
+      <div>
+        <a href="#" class="text-light mx-2 fs-5"><i class="bi bi-instagram"></i></a>
+        <a href="#" class="text-light mx-2 fs-5"><i class="bi bi-twitter-x"></i></a>
+        <a href="#" class="text-light mx-2 fs-5"><i class="bi bi-facebook"></i></a>
+      </div>
+
+      
+  </footer>
+
+  <!-- Script de Bootstrap -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.4/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YUe2LzesAfftltw+PEaao2tjU/QATaW/rOitAq67e0CT0Zi2VVRL0oC4+gAaeBKu"
+    crossorigin="anonymous"></script>
+
+
+  <!-- Script para mostrar/ocultar contraseña -->
+  <script>
+    function togglePassword(id, iconElement) {
+      const input = document.getElementById(id);
+
+      if (input.type === "password") {
+        input.type = "text";
+        iconElement.classList.remove("bi-eye");
+        iconElement.classList.add("bi-eye-slash");
+      } else {
+        input.type = "password";
+        iconElement.classList.remove("bi-eye-slash");
+        iconElement.classList.add("bi-eye");
+      }
+    }
+
+    function validarFormulario() {
+      const pass = document.getElementById('password').value;
+      const confirmPass = document.getElementById('confirmPassword').value;
+      const errorMsg = document.getElementById('errorMsg');
+
+      if (pass !== confirmPass) {
+        errorMsg.textContent = "Las contraseñas no coinciden.";
+        return false;
+      }
+
+      errorMsg.textContent = "";
+      return true;
+    }
+  </script>
+
+<script>
+  window.addEventListener('scroll', function () {
+    const navbar = document.querySelector('.nav-scroll');
+    if (window.scrollY > 50) {
+      navbar.classList.add('scrolled');
+    } else {
+      navbar.classList.remove('scrolled');
+    }
+  });
+</script>
+
+</body>
+
+</html>

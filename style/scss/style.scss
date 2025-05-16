@@ -1,0 +1,19 @@
+// style.scss
+
+// 1. Utilidades
+@import 'utils/variables';
+
+// 2. Base
+@import 'base/reset';
+
+// 3. Componentes
+@import 'components/whatsapp';
+@import 'components/product-card';
+
+// 4. Layout
+@import 'layout/navbar';
+@import 'layout/banner';
+
+
+// 5. Páginas específicas
+@import 'pages/contacto';

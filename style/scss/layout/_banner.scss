@@ -1,0 +1,23 @@
+// INICIO
+#banner {
+    .d-item {
+      height: 500px;
+    }
+  
+    .d-img {
+      height: 100%;
+      object-fit: cover;
+      filter: brightness(0.6);
+    }
+  }
+  
+  .nosotros {
+    text-align: justify;
+    line-height: 2em;
+  }
+  
+  // BANNER COLECCIONES
+  .hero-banner {
+    height: 50vh;
+    font-size: 40px;
+  }

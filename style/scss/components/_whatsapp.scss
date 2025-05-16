@@ -1,0 +1,21 @@
+
+// COMPONENTES
+.whatsapp-float {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: $color-whatsapp;
+    color: $color-blanco;
+    border-radius: 50%;
+    font-size: 28px;
+    padding: 14px 16px;
+    z-index: 1000;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+    text-decoration: none;
+  
+    &:hover {
+      transform: scale(1.1);
+      background-color: $color-whatsapp-hover;
+    }
+}

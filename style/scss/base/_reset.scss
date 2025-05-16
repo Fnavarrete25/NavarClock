@@ -1,0 +1,28 @@
+
+// RESET
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: $font-principal;
+    font-family: $font-secundaria;
+    padding-top: 50px;
+  }
+  
+  a {
+    text-decoration: none;
+    color: $color-negro;
+  }
+
+  html, body {
+    max-width: 100vw;
+    overflow-x: hidden;
+  }
+  
+  .row {
+    margin-right: 0 !important;
+    margin-left: 0 !important;
+  }

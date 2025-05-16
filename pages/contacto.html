@@ -2,176 +2,238 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NavarClock</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contáctenos</title>
 
-    <!--link a Bootstrap via CDN-->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.4/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-DQvkBjpPgn7RC31MCQoOeC9TI2kdqa4+BSgNMNj8v77fdC77Kj5zpWFTJaaAoMbC" crossorigin="anonymous">
+  <!--link a Bootstrap via CDN-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.4/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-DQvkBjpPgn7RC31MCQoOeC9TI2kdqa4+BSgNMNj8v77fdC77Kj5zpWFTJaaAoMbC" crossorigin="anonymous">
 
-    <!-- Link CSS -->
-    <link rel="stylesheet" href="../style/style.css">
+  <!-- Link CSS -->
+  <link rel="stylesheet" href="../style/css/style.css">
+
+  <!-- AOS CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+
+  
+  
+
+
 </head>
 
 
 
+
+
 <body>
-    <header>
-        <a class="logo" href="../index.html">
-            <span>NavarClock</span>
-        </a>
-        <div class="content-wrapper">
-            <nav class="navbar">
-                <ul>
-                    <li><a href="../index.html">Inicio</a></li>
-                    <li><a href="../Proyecto Pag web/pages/relojes.html">Relojes</a></li>
-                    <li><a href="./colecciones.html">Colecciones</a></li>
-                    <li><a href="./sobre-nosotros.html">Sobre nosotros</a></li>
-                    <li><a href="./pages/accesorios.html">Accesorios</a></li>
-                </ul>
-            </nav>
+  
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top nav-scroll">
+      <div class="container">
+        <a class="navbar-brand fw-bold" href="../index.html">NavarClock</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link active" href="../index.html">Inicio</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="./colecciones.html">Colecciones</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./sobre-nosotros.html">Sobre nosotros</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./registrate.html">Regístrate</a>
+            </li>
+          </ul>
+          <a href="./contacto.html" class="btn btn-light ms-3">Contacto</a>
         </div>
-        <a class="boton" href="./contacto.html">Contacto</a>
-    </header>
+      </div>
+    </nav>
+  
+    <!-- Main -->
 
-    <section class="contactanos bg-info py-5">
-        <h2 class="text-center">Contáctenos</h2>
-        <div class="container">
-            <form>
-                <div class="mb-3">
-                  <label for="nombre" class="form-label">Nombres</label>
-                  <input type="text" class="form-control" id="nombre" aria-describedby="nombre">
-                  <div id="nombre" class="form-text">Mensaje a mostrar para Nombres.</div>
-                </div>
-                <div class="mb-3">
-                    <label for="exampleInputEmail1" class="form-label">Email address</label>
-                    <input type="email" class="form-control" id="nombre" aria-describedby="emalHelp">
-                    <div id="emailHelp" class="form-text">Mensaje a mostrar para Nombres.</div>
-                  </div>
-                <div class="mb-3">
-                  <label for="asunto" class="form-label">Asuntos</label>
-                  <input type="text" class="form-control" id="asunto">
-                  <div id="asunto" class="form-text">Mensaje a mostrar para nombre.</div>
-                </div>
-                <div class="mb-3">
-                    <label for="Mensaje">Mensaje</label>
-                    <textarea class="form-control" name="mensaje" id="" cols="30" rows="5"></textarea>
-
-                </div>
-
-                <button type="submit" class="btn btn-primary">Enviar</button>
-              </form>
+<main>
+  <section class="contactanos text-white py-5">
+    <h2 class="text-center">Contáctenos</h2>
+    <div class="container-fluid">
+      <form>
+        <div class="mb-3">
+          <label for="nombre" class="form-label">Nombres y Apellido</label>
+          <input type="text" class="form-control" id="nombre" aria-describedby="nombre">
+          <div id="nombreHelp" class="form-text">Mensaje a mostrar para Nombres.</div>
         </div>
+        <div class="mb-3">
+          <label for="exampleInputEmail1" class="form-label">Email</label>
+          <input type="email" class="form-control" id="email" aria-describedby="emalHelp">
+          <div id="emailHelp" class="form-text">Mensaje a mostrar para Nombres.</div>
+        </div>
+        <div class="mb-3">
+          <label for="asunto" class="form-label">Asunto</label>
+          <input type="text" class="form-control" id="asunto">
+          <div id="asuntoHelp" class="form-text">Mensaje a mostrar para nombre.</div>
+        </div>
+        <div class="mb-3">
+          <label for="mensaje">Mensaje</label>
+          <textarea class="form-control" name="mensaje" id="mensajeHelp" cols="30" rows="5"></textarea>
 
-        
-    </section>
-
-
-
-    <section class="nosotros my-5">
-        
-        <div class="container">
-            <div class="row">
-                <div class="col-6">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste doloribus nemo ducimus ipsum rem
-                        at, blanditiis optio maxime vel! Ullam officia, maiores doloremque quam dolorum incidunt
-                        sapiente sunt nesciunt sit.</p>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea dolorum laborum eligendi perspiciatis
-                        quisquam rerum eaque exercitationem officia voluptatibus, porro placeat autem harum, laudantium
-                        illo dolorem. Officiis voluptates inventore vel!</p>
-                </div>
-                <div class="col-6">
-                    <img class="img-fluid" src="https://picsum.photos/800/400" alt="">
-                </div>
-            </div>
         </div>
 
-    </section>
+        <button type="submit" class="btn btn-primary">Enviar</button>
+      </form>
+    </div>
 
- </main>
 
-    <!-- Footer -->
-    <footer class="bg-dark text-light pt-5 pb-3">
-        <div class="container">
-          <div class="row">
+  </section>
+
+
+
+  <section class="Mapa my-5">
+
+    <h2 class="text-center my-5"> Donde encontrarnos? </h2>
+
+    <div class="container">
+      <div class="row">
+
+        <div class="col-12">
+          <div class="map-responsive">
             
-            <div class="col-md-3 mb-4">
-              <h5 class="text-uppercase">Productos</h5>
-              <ul class="list-unstyled">
-                <li><a href="#" class="text-decoration-none text-light">Relojes</a></li>
-                <li><a href="#" class="text-decoration-none text-light">Colecciones</a></li>
-                <li><a href="#" class="text-decoration-none text-light">Calculadoras científicas</a></li>
-                <li><a href="#" class="text-decoration-none text-light">Calculadoras básicas</a></li>
-                <li><a href="#" class="text-decoration-none text-light">Captura de datos</a></li>
-                <li><a href="#" class="text-decoration-none text-light">Impresoras</a></li>
-                <li><a href="#" class="text-decoration-none text-light">Proyectores</a></li>
-              </ul>
-            </div>
-      
-            <div class="col-md-3 mb-4">
-              <h5 class="text-uppercase">Atención al cliente</h5>
-              <ul class="list-unstyled">
-                <li><a href="#" class="text-decoration-none text-light">Soporte</a></li>
-                <li><a href="#" class="text-decoration-none text-light">Preguntas frecuentes</a></li>
-                <li><a href="#" class="text-decoration-none text-light">Condiciones de entrega</a></li>
-                <li><a href="#" class="text-decoration-none text-light">Eliminación de dispositivos</a></li>
-                <li><a href="#" class="text-decoration-none text-light">Devoluciones</a></li>
-                <li><a href="#" class="text-decoration-none text-light">Cambios</a></li>
-                <li><a href="#" class="text-decoration-none text-light">CGC</a></li>
-              </ul>
-            </div>
-      
-            <div class="col-md-3 mb-4">
-              <h5 class="text-uppercase">Suscripción</h5>
-              <ul class="list-unstyled">
-                <li><a href="#" class="text-decoration-none text-light">NavarClock ID</a></li>
-                <li><a href="#" class="text-decoration-none text-light">Boletín</a></li>
-              </ul>
-            </div>
-      
-            <div class="col-md-3 mb-4">
-              <h5 class="text-uppercase">Corporativo</h5>
-              <ul class="list-unstyled">
-                <li><a href="#" class="text-decoration-none text-light">La Empresa</a></li>
-                <li><a href="#" class="text-decoration-none text-light">Noticias de productos</a></li>
-              </ul>
-            </div>
-      
-          </div>
-      
-          <hr class="bg-secondary">
-      
-          <div class="row align-items-center">
-            <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-              <small>© 2025 NavarClock | 
-                <a href="#" class="text-light text-decoration-underline">Condiciones de uso</a> | 
-                <a href="#" class="text-light text-decoration-underline">Política de privacidad</a>
-              </small>
-            </div>
-            <div class="col-md-6 text-center text-md-end">
-              <!-- Métodos de pago -->
-              <img src="https://upload.wikimedia.org/wikipedia/commons/4/41/Visa_Logo.png" alt="Visa" width="40" class="mx-1">
-              <img src="https://upload.wikimedia.org/wikipedia/commons/0/04/Mastercard-logo.png" alt="Mastercard" width="40" class="mx-1">
-              <img src="https://upload.wikimedia.org/wikipedia/commons/b/b5/PayPal.svg" alt="PayPal" width="40" class="mx-1">
-             
-            </div>
-          </div>
-      
-          <!-- Íconos sociales -->
-          <div class="row mt-4">
-            <div class="col text-center">
-              <a href="#" class="text-light mx-2 fs-5"><i class="fab fa-instagram"></i></a>
-              <a href="#" class="text-light mx-2 fs-5"><i class="fab fa-x-twitter"></i></a>
-              <a href="#" class="text-light mx-2 fs-5"><i class="fab fa-facebook-f"></i></a>
-            </div>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3200.736376161163!2d-4.4788456!3d36.6567922!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd72f9806f9d62c5%3A0xf987d2e74b11c209!2sPlaza%20Mayor!5e0!3m2!1ses-419!2ses!4v1745827396051!5m2!1ses-419!2ses"
+              width="100%" height="200" style="border:0;" allowfullscreen="" loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"></iframe>
+
           </div>
         </div>
-      </footer>
-    <!-- Script de Bootstrap -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.4/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-YUe2LzesAfftltw+PEaao2tjU/QATaW/rOitAq67e0CT0Zi2VVRL0oC4+gAaeBKu"
-        crossorigin="anonymous"></script>
+      </div>
+    </div>
+
+  </section>
+
+
+
+  <div class="row text-center">
+    <!-- Oficina -->
+    <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="0">
+      <i class="bi bi-house-fill fs-1 text-dark mb-3"></i>
+      <h5>Nuestra oficina</h5>
+      <p>Centro comercial-Plaza Mayor<br>Malaga</p>
+    </div>
+
+    <!-- Teléfonos -->
+    <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="100">
+      <i class="bi bi-telephone-fill fs-1 text-dark mb-3"></i>
+      <h5>Datos de contacto</h5>
+      <p>34 388 33 15 / 34 388 31 44</p>
+    </div>
+
+    <!-- E-mail -->
+    <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="200">
+      <i class="bi bi-envelope-fill fs-1 text-dark mb-3"></i>
+      <h5>E-mail</h5>
+      <p><a href="mailto:estudio@es-alemany.com">NavarClock01@gmail.com</a></p>
+    </div>
+  </div>
+
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-light pt-5 pb-3">
+    <div class="container">
+      <div class="row">
+
+        <div class="col-md-3 mb-4">
+          <h5 class="text-uppercase">Productos</h5>
+          <ul class="list-unstyled">
+            <li><a href="#" class="text-decoration-none text-light">Relojes</a></li>
+            <li><a href="#" class="text-decoration-none text-light">Colecciones</a></li>
+            <li><a href="#" class="text-decoration-none text-light">Correas de cuero</a></li>
+            <li><a href="#" class="text-decoration-none text-light">Correas de acero</a></li>
+
+
+
+          </ul>
+        </div>
+
+        <div class="col-md-3 mb-4">
+          <h5 class="text-uppercase">Atención al cliente</h5>
+          <ul class="list-unstyled">
+            <li><a href="/pages/contacto.html" class="text-decoration-none text-light">Soporte</a></li>
+            <li><a href="#" class="text-decoration-none text-light">Preguntas frecuentes</a></li>
+            <li><a href="#" class="text-decoration-none text-light">Condiciones de entrega</a></li>
+            <li><a href="#" class="text-decoration-none text-light">Eliminación de dispositivos</a></li>
+            <li><a href="#" class="text-decoration-none text-light">Devoluciones</a></li>
+
+
+          </ul>
+        </div>
+
+        <div class="col-md-3 mb-4">
+          <h5 class="text-uppercase">Suscripción</h5>
+          <ul class="list-unstyled">
+            <li><a href="#" class="text-decoration-none text-light">NavarClock ID</a></li>
+            <li><a href="#" class="text-decoration-none text-light">Boletín</a></li>
+          </ul>
+        </div>
+
+        <div class="col-md-3 mb-4">
+          <h5 class="text-uppercase">Corporativo</h5>
+          <ul class="list-unstyled">
+            <li><a href="/pages/sobre-nosotros.html" class="text-decoration-none text-light">La Empresa</a></li>
+            <li><a href="#" class="text-decoration-none text-light">Noticias de productos</a></li>
+          </ul>
+        </div>
+
+      </div>
+
+      <hr class="bg-secondary">
+
+      <div class="row align-items-center">
+        <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+          <small>© 2025 NavarClock |
+            <a href="#" class="text-light text-decoration-underline">Condiciones de uso</a> |
+            <a href="#" class="text-light text-decoration-underline">Política de privacidad</a>
+          </small>
+        </div>
+        <div class="col-md-6 text-center text-md-end">
+          <!-- Métodos de pago -->
+          <img src="https://upload.wikimedia.org/wikipedia/commons/4/41/Visa_Logo.png" alt="Visa" width="40"
+            class="mx-1">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/0/04/Mastercard-logo.png" alt="Mastercard" width="40"
+            class="mx-1">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/b/b5/PayPal.svg" alt="PayPal" width="40"
+            class="mx-1">
+
+        </div>
+      </div>
+
+      <!-- Íconos sociales -->
+      <div>
+        <a href="#" class="text-light mx-2 fs-5"><i class="bi bi-instagram"></i></a>
+        <a href="#" class="text-light mx-2 fs-5"><i class="bi bi-twitter-x"></i></a>
+        <a href="#" class="text-light mx-2 fs-5"><i class="bi bi-facebook"></i></a>
+      </div>
+
+  </footer>
+  <!-- Script de Bootstrap -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.4/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YUe2LzesAfftltw+PEaao2tjU/QATaW/rOitAq67e0CT0Zi2VVRL0oC4+gAaeBKu"
+    crossorigin="anonymous"></script>
+
+  <!-- AOS JS -->
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 
 </body>
 

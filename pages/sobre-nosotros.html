@@ -4,117 +4,222 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NavarClock</title>
+    <title>Nuestra Historia- Quienes somos</title>
 
     <!--link a Bootstrap via CDN-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.4/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-DQvkBjpPgn7RC31MCQoOeC9TI2kdqa4+BSgNMNj8v77fdC77Kj5zpWFTJaaAoMbC" crossorigin="anonymous">
 
+        <!-- Bootstrap Icons -->
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+
+   <!-- AOS CSS -->
+<link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
     <!-- Link CSS -->
-    <link rel="stylesheet" href="../style/style.css">
+    <link rel="stylesheet" href="../style/css/style.css">
 </head>
 
-
-
 <body>
-    <header>
-        <a class="logo" href="../index.html">
-            <span>NavarClock</span>
-        </a>
-        <div class="content-wrapper">
-            <nav class="navbar">
-                <ul>
-                    <li><a href="../index.html">Inicio</a></li>
-                    <li><a href="../Proyecto Pag web/pages/relojes.html">Relojes</a></li>
-                    <li><a href="./colecciones.html">Colecciones</a></li>
-                    <li><a href="./pages/sobre-nosotros.html">Sobre nosotros</a></li>
-                    <li><a href="./pages/accesorios.html">Accesorios</a></li>
-                </ul>
-            </nav>
+
+<!-- Nav -->
+      <nav class="navbar navbar-expand-lg navbar-dark fixed-top nav-scroll">
+        <div class="container">
+          <a class="navbar-brand fw-bold" href="../index.html">NavarClock</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+      
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link active" href="../index.html">Inicio</a>
+              </li>
+              
+              <li class="nav-item">
+                <a class="nav-link" href="./colecciones.html">Colecciones</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./sobre-nosotros.html">Sobre nosotros</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./registrate.html">Regístrate</a>
+              </li>
+            </ul>
+            <a href="./contacto.html" class="btn btn-light ms-3">Contacto</a>
+          </div>
         </div>
-        <a class="boton" href="./contacto.html">Contacto</a>
-    </header>
+      </nav>
+    
+      <!-- Main -->
+    <main>
+
     <section class="nosotros my-5">
-        <h2 class="text-center my-5"> Quiénes Somos</h2>
+        <h2 class="text-center my-5"> ¿Quiénes somos?</h2>
         <div class="container">
             <div class="row">
                 <div class="col-6">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste doloribus nemo ducimus ipsum rem
-                        at, blanditiis optio maxime vel! Ullam officia, maiores doloremque quam dolorum incidunt
-                        sapiente sunt nesciunt sit.</p>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea dolorum laborum eligendi perspiciatis
-                        quisquam rerum eaque exercitationem officia voluptatibus, porro placeat autem harum, laudantium
-                        illo dolorem. Officiis voluptates inventore vel!</p>
+                    <p>En Navarclock creemos que el tiempo no solo se mide: se vive, se sueña y se conquista. Somos una relojería argentina que nació con una misión clara: acercar el diseño, la elegancia y la calidad de los grandes relojes a una nueva generación que está comenzando a dejar su huella.Diseñamos relojes para quienes viven con pasión. Para los que se esfuerzan, para los que se mueven, para los que no esperan el momento ideal: lo crean.</p>
+
+                    <p>Ya sea que busques un estilo deportivo, urbano o clásico, en Navarclock vas a encontrar una pieza que hable de vos, de tu personalidad y de tu ritmo. Porque sabemos lo que significa tener tu primer reloj de verdad. Creamos modelos accesibles, resistentes y con diseño propio. No creemos que la calidad deba ser un lujo inalcanzable. Creemos que debe estar al alcance de quienes se animan a más. Navarclock. El tiempo es tuyo.</p>
+
                 </div>
                 <div class="col-6">
-                    <img class="img-fluid" src="https://picsum.photos/800/400" alt="">
+                    <img class="img-fluid" src="/img/equipo.avif" alt="">
                 </div>
             </div>
         </div>
 
     </section>
 
+    <section class="container py-5">
+      <div class="row mb-4">
+        <div class="col">
+          <h2>Nuestra Historia</h2>
+          <p>Fundada en 2025, nuestra relojería nació con una idea clara: acercar la calidad y el diseño de los grandes relojes a las nuevas generaciones. Inspirados por la pasión por la relojería y conscientes de que los precios elevados suelen ser una barrera para los jóvenes, creamos una marca que ofrece relojes de excelente calidad a precios accesibles. Así, cada persona puede lucir un reloj único, sin tener que sacrificar estilo ni presupuesto.</p>
+        </div>
+      </div>
+
+      <div class="container py-5">
+        <h2 class="text-center mb-4">Nuestro increíble equipo</h2>
+        <div class="row g-4 justify-content-center">
+
+          <!-- Tarjeta 1 -->
+          <div class="col-12 col-sm-6 col-md-4" data-aos="fade-up" data-aos-delay="100">
+            <div class="card text-center h-100">
+              <img src="/img/Fundador.avif" class="card-img-top" alt="Nat Reynolds">
+              <div class="card-body">
+                <h5 class="card-title">Nat Reynolds</h5>
+                <p class="card-text">Socio Fundador</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Tarjeta 2 -->
+          <div class="col-12 col-sm-6 col-md-4" data-aos="fade-up" data-aos-delay="200">
+            <div class="card text-center h-100">
+              <img src="/img/talento.avif" class="card-img-top" alt="Mónica Pouli">
+              <div class="card-body">
+                <h5 class="card-title">Mónica Pouli</h5>
+                <p class="card-text">Gestión del talento</p>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Tarjeta 3 -->
+          <div class="col-12 col-sm-6 col-md-4" data-aos="fade-up" data-aos-delay="300">
+            <div class="card text-center h-100">
+              <img src="/img/Rrhh.avif" class="card-img-top" alt="Jennie Roberts">
+              <div class="card-body">
+                <h5 class="card-title">Jennie Roberts</h5>
+                <p class="card-text">Analítica de RRHH</p>
+              </div>
+            </div>
+    
+      </div>
+      
+
+
+
+      <div class="row py-5 mb-4">
+        <div class="col-md-4">
+          <h3>Misión</h3>
+          <p>Ofrecer relojes de calidad, con estilo y a precios accesibles, para que los jóvenes puedan expresar su personalidad y disfrutar de un buen reloj sin gastar de más.</p>
+        </div>
+
+        <div class="col-md-4">
+          <h3>Visión</h3>
+          <p>Ser la marca de relojes preferida por las nuevas generaciones, reconocida por su innovación, accesibilidad y compromiso con el diseño y la calidad.</p>
+        </div>
+
+        <div class="col-md-4">
+          <h3>Valores</h3>
+          <ul>
+            <li>Innovación</li>
+            <li>Compromiso</li>
+            <li>Transparencia</li>
+          </ul>
+        </div>
+      </div>
+      
+      <div class="row mb-4">
+        <div class="col">
+          <h2>¿Por qué elegirnos?</h2>
+          <ul>
+            <li>Atención personalizada</li>
+            <li>Experiencia comprobada</li>
+            <li>Soluciones innovadoras</li>
+          </ul>
+        </div>
+      </div>
+      <div class="text-center">
+        <a href="contacto.html" class="btn btn-primary">Contáctanos</a>
+      </div>
+    </section>
+    
+
  </main>
 
     <!-- Footer -->
     <footer class="bg-dark text-light pt-5 pb-3">
-        <div class="container">
-          <div class="row">
-            
-            <div class="col-md-3 mb-4">
-              <h5 class="text-uppercase">Productos</h5>
-              <ul class="list-unstyled">
-                <li><a href="#" class="text-decoration-none text-light">Relojes</a></li>
-                <li><a href="#" class="text-decoration-none text-light">Colecciones</a></li>
-                <li><a href="#" class="text-decoration-none text-light">Calculadoras científicas</a></li>
-                <li><a href="#" class="text-decoration-none text-light">Calculadoras básicas</a></li>
-                <li><a href="#" class="text-decoration-none text-light">Captura de datos</a></li>
-                <li><a href="#" class="text-decoration-none text-light">Impresoras</a></li>
-                <li><a href="#" class="text-decoration-none text-light">Proyectores</a></li>
-              </ul>
-            </div>
-      
-            <div class="col-md-3 mb-4">
-              <h5 class="text-uppercase">Atención al cliente</h5>
-              <ul class="list-unstyled">
-                <li><a href="#" class="text-decoration-none text-light">Soporte</a></li>
-                <li><a href="#" class="text-decoration-none text-light">Preguntas frecuentes</a></li>
-                <li><a href="#" class="text-decoration-none text-light">Condiciones de entrega</a></li>
-                <li><a href="#" class="text-decoration-none text-light">Eliminación de dispositivos</a></li>
-                <li><a href="#" class="text-decoration-none text-light">Devoluciones</a></li>
-                <li><a href="#" class="text-decoration-none text-light">Cambios</a></li>
-                <li><a href="#" class="text-decoration-none text-light">CGC</a></li>
-              </ul>
-            </div>
-      
-            <div class="col-md-3 mb-4">
-              <h5 class="text-uppercase">Suscripción</h5>
-              <ul class="list-unstyled">
-                <li><a href="#" class="text-decoration-none text-light">NavarClock ID</a></li>
-                <li><a href="#" class="text-decoration-none text-light">Boletín</a></li>
-              </ul>
-            </div>
-      
-            <div class="col-md-3 mb-4">
-              <h5 class="text-uppercase">Corporativo</h5>
-              <ul class="list-unstyled">
-                <li><a href="#" class="text-decoration-none text-light">La Empresa</a></li>
-                <li><a href="#" class="text-decoration-none text-light">Noticias de productos</a></li>
-              </ul>
-            </div>
-      
+      <div class="container">
+        <div class="row">
+          
+          <div class="col-md-3 mb-4">
+            <h5 class="text-uppercase">Productos</h5>
+            <ul class="list-unstyled">
+              <li><a href="#" class="text-decoration-none text-light">Relojes</a></li>
+              <li><a href="#" class="text-decoration-none text-light">Colecciones</a></li>
+              <li><a href="#" class="text-decoration-none text-light">Correas de cuero</a></li>
+              <li><a href="#" class="text-decoration-none text-light">Correas de acero</a></li>
+              
+              
+         
+            </ul>
           </div>
-      
-          <hr class="bg-secondary">
-      
-          <div class="row align-items-center">
-            <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-              <small>© 2025 NavarClock | 
-                <a href="#" class="text-light text-decoration-underline">Condiciones de uso</a> | 
-                <a href="#" class="text-light text-decoration-underline">Política de privacidad</a>
-              </small>
-            </div>
-            <div class="col-md-6 text-center text-md-end">
+    
+          <div class="col-md-3 mb-4">
+            <h5 class="text-uppercase">Atención al cliente</h5>
+            <ul class="list-unstyled">
+              <li><a href="./pages/contacto.html" class="text-decoration-none text-light">Soporte</a></li>
+              <li><a href="#" class="text-decoration-none text-light">Preguntas frecuentes</a></li>
+              <li><a href="#" class="text-decoration-none text-light">Condiciones de entrega</a></li>
+              <li><a href="#" class="text-decoration-none text-light">Eliminación de dispositivos</a></li>
+              <li><a href="#" class="text-decoration-none text-light">Devoluciones</a></li>
+              
+              
+            </ul>
+          </div>
+    
+          <div class="col-md-3 mb-4">
+            <h5 class="text-uppercase">Suscripción</h5>
+            <ul class="list-unstyled">
+              <li><a href="#" class="text-decoration-none text-light">NavarClock ID</a></li>
+              <li><a href="#" class="text-decoration-none text-light">Boletín</a></li>
+            </ul>
+          </div>
+    
+          <div class="col-md-3 mb-4">
+            <h5 class="text-uppercase">Corporativo</h5>
+            <ul class="list-unstyled">
+              <li><a href="./pages/sobre-nosotros.html" class="text-decoration-none text-light">La Empresa</a></li>
+              <li><a href="#" class="text-decoration-none text-light">Noticias de productos</a></li>
+            </ul>
+          </div>
+    
+        </div>
+    
+        <hr class="bg-secondary">
+    
+        <div class="row align-items-center">
+          <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+            <small>© 2025 NavarClock | 
+              <a href="#" class="text-light text-decoration-underline">Condiciones de uso</a> | 
+              <a href="#" class="text-light text-decoration-underline">Política de privacidad</a>
+            </small>
+          </div>
+          <div class="col-md-6 text-center text-md-end">
+
               <!-- Métodos de pago -->
               <img src="https://upload.wikimedia.org/wikipedia/commons/4/41/Visa_Logo.png" alt="Visa" width="40" class="mx-1">
               <img src="https://upload.wikimedia.org/wikipedia/commons/0/04/Mastercard-logo.png" alt="Mastercard" width="40" class="mx-1">
@@ -123,20 +228,28 @@
             </div>
           </div>
       
-          <!-- Íconos sociales -->
-          <div class="row mt-4">
-            <div class="col text-center">
-              <a href="#" class="text-light mx-2 fs-5"><i class="fab fa-instagram"></i></a>
-              <a href="#" class="text-light mx-2 fs-5"><i class="fab fa-x-twitter"></i></a>
-              <a href="#" class="text-light mx-2 fs-5"><i class="fab fa-facebook-f"></i></a>
-            </div>
-          </div>
-        </div>
+         <!-- Íconos sociales -->
+      <div>
+        <a href="#" class="text-light mx-2 fs-5"><i class="bi bi-instagram"></i></a>
+        <a href="#" class="text-light mx-2 fs-5"><i class="bi bi-twitter-x"></i></a>
+        <a href="#" class="text-light mx-2 fs-5"><i class="bi bi-facebook"></i></a>
+      </div>
+
       </footer>
+
     <!-- Script de Bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.4/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YUe2LzesAfftltw+PEaao2tjU/QATaW/rOitAq67e0CT0Zi2VVRL0oC4+gAaeBKu"
         crossorigin="anonymous"></script>
+
+        <!-- AOS JS -->
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<script>
+  AOS.init({
+    duration: 1000, // Duración de la animación 
+    once: true      //  que se ejecute una vez
+  });
+</script>
 
 </body>
 
